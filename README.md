@@ -7,16 +7,16 @@
   - [1. Describe motifs and metaPattern](#1-describe-motifs-and-metapattern)
   - [2. Describe genomes](#2-describe-genomes)
     - [2.1 Download genomes](#21-download-genomes)
-    - [2.2 Describe genomes in `genomes.txt` configuration file](#22-describe-genomes-in-genomestxt-configuration-file)
+    - [2.2 Describe genomes in `genomes.txt` configuration file](#22-describe-genomes-in-genomestxt-configuration-file-see-the-genomestxt-configuration-file-section-for-explanations)
   - [3. Edit global `conf.txt` configuration file](#3-edit-global-conftxt-configuration-file)  
   - [4. Run workflow](#4-run-workflow)
 - [Workflow description](#workflow-description)
   - [Configuration files](#configuration-files-)
     - [config.txt](#configtxt)
-    - [patterns.txt](#patternstxt)
+    - [patterns.ttxt](#patternstxt)
     - [genomes.txt](#genomestxt)
-  - [Step 0 **PRepare Genomes**: preparation of genomes for analysis](#step-0-download-genomes)
-    - [findGenomesUrl.py](#findGenomesUrl.py) 
+  - [Step 0 **PRepare Genomes**: preparation of genomes for analysis](#step-0-prepare-genomes-preparation-of-genomes-data-for-analysis)
+    - [findGenomesUrl.py](#findgenomesurlpy) 
     - [Step 0.1 : download prot genomes](#step-01-download-genomes)
   - [Step 1 **COmbine**: motifs detection and metaPattern identification](#step-1-combine-motifs-detection-and-metapattern-identification)
     - [Step 1.1 : run FuzzPro on genomes](#step-11-run-fuzzpro-on-genomes)
@@ -132,7 +132,8 @@ File describing all genomes in which patterns and the metapattern will be search
 - URL : Genomes download link
 
 ### Step 0 **PRepare Genomes**: preparation of genomes data for analysis
-#### findGenomesUrl.py : 
+
+#### findGenomesUrl.py
 Its main function is to automatically generate download URLs for protein       sequences genome based on their accession numbers and complete names, which it then writes into an output file. This facilitates the use of the workflow by automating the process of populating the [`genomes.txt`](https://github.com/cgbaboua/DGAT3_2023/blob/main/conf/genomes.txt) file.
 
 ##### Prerequisites :
