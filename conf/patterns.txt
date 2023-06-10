@@ -1,0 +1,4 @@
+Name	Pattern	OneCode
+FES1	[VI]xxC[MTV]xxKC	E
+FES2	C[KR]C[MLV]xxC	F
+SER	[STE][STED][SF][EDS]S	S

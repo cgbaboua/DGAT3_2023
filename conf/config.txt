@@ -1,0 +1,65 @@
+# project folder
+Project="/work_home/cgbaboua/cassandra_dgat3_2023"
+
+# Cluster configuration (sge)
+use_cluster="no"
+# user mail 
+userMail=cassandra.gbaboua@inrae.fr
+# queue
+sgeQueue="short.q"
+
+# Configuration file
+Conf_patterns="${Project}/conf/patterns.txt"
+Conf_genomes="${Project}/conf/genomes.txt"
+Conf_file="${Project}/conf/config.txt"
+
+#Option for results appearance
+pattern_dist="yes"
+
+# Genome folder
+Genomes_folder="${Project}/genomes"
+
+# Versions of results folder
+Results_versions="${Project}/results"
+
+# Global One letter pattern searched
+GlobalPattern="EF"
+
+# One letter pattern to report in step4_run_global_patterns_analyse_and_create_resume_file.sh
+patternsToReport="EF"
+
+# fuzzPro results folder 
+fuzzPro_folder="${Project}/fuzzPro"
+
+# fuzzPro executable 
+fuzzPro_env="emboss-6.6.0"
+
+# scripts folder
+sh_folder="${Project}/sh"
+
+# final results folder
+results_folder="${Project}/results"
+# clustal results folder 
+results_clustal=${Project}/clustalo
+
+# html reports folder
+html_folder="${Project}/html"
+
+# clustering folder
+clustering_folder="${Project}/clustering"
+
+# clustering module to use cluster | linclust
+mmseq2_clustering="cluster"
+
+# Conda environment for mmseq
+condaEnvMMseq="mmseqs2"
+# Conda environment for clustal
+condaEnvClustalo="clustalo-1.2.4"
+
+# mmseq2 clustering parameters 
+min_seq_id="0.5"
+
+# MView path
+mview_bin="/home/cgbaboua/opt/bin/jalview"
+
+
